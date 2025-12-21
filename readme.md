@@ -20,7 +20,7 @@ Pinout for the SPI lines:
 |  19 | MOSI     |
 |  6  | SCK      |
 
-![Pico pinout](pinout.png)
+![RP2040 Feather pinout](pinout.png)
 
 ## Compiling
 
@@ -32,7 +32,7 @@ make
 ```
 
 Plug in your RP2040 Feather. Mount it as you would any other USB flash drive.
-Copy `pico_serprog.uf2` into it. Your programmer is now ready.
+Copy `rp2040feather_serprog.uf2` into it. Your programmer is now ready.
 If you want to change the firmware, you need to press the button
 on the board while you plug it in.
 
