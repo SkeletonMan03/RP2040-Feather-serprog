@@ -2,13 +2,13 @@
 
 Slightly less terrible serprog implementation for the Raspberry Pi Pico and
 other RP2040 based boards. Based on
-![pico-serprog by stacksmashing](https://github.com/stacksmashing/pico-serprog/).
-Further improved by kukrimate ![here](https://github.com/kukrimate/pico-serprog).  
-Further improved by Riku\_V ![here](https://codeberg.org/Riku_V/pico-serprog/).  
+[pico-serprog by stacksmashing](https://github.com/stacksmashing/pico-serprog/).
+Further improved by kukrimate [here](https://github.com/kukrimate/pico-serprog).  
+Further improved by Riku\_V [here](https://codeberg.org/Riku_V/pico-serprog/).  
 Made work on a RP2040 Feather by me (LordSkeletonMan) here.
 
 For a guide on how to flash a chip see
-![this page](https://libreboot.org/docs/install/spi.html#raspberry-pi-pico).
+[this page](https://libreboot.org/docs/install/spi.html#raspberry-pi-pico).
 
 This takes about 17 seconds to read the 8MiB BIOS chip of an X200.
 
@@ -20,7 +20,7 @@ Pinout for the SPI lines:
 |  19 | MOSI     |
 |  6  | SCK      |
 
-![RP2040 Feather pinout](pinout.png)
+[RP2040 Feather pinout](pinout.png)
 
 ## Compiling
 
