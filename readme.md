@@ -7,9 +7,6 @@ Further improved by kukrimate ![here](https://github.com/kukrimate/pico-serprog)
 Further improved by Riku\_V ![here](https://codeberg.org/Riku_V/pico-serprog/).
 Made work on a RP2040 by me (LordSkeletonMan) here.
 
-Pre-compiled binaries can be downloaded from the
-![Libreboot project](https://libreboot.org/download.html#https).
-
 For a guide on how to flash a chip see
 ![this page](https://libreboot.org/docs/install/spi.html#raspberry-pi-pico).
 
