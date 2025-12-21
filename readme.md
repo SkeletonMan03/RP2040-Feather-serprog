@@ -25,7 +25,9 @@ Pinout for the SPI lines:
 ## Compiling
 
 ```
-cmake .
+mkdir build
+cd build
+cmake ../
 make
 ```
 
