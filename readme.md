@@ -10,7 +10,7 @@ Made work on a RP2040 Feather by me (LordSkeletonMan) here.
 For a guide on how to flash a chip see
 [this page](https://libreboot.org/docs/install/spi.html#raspberry-pi-pico).
 
-This takes about 17 seconds to read the 8MiB BIOS chip of an X200.
+This takes about 33 seconds to read the 16MiB BIOS chip of a T480s.
 
 Pinout for the SPI lines:
 | Pin | Function |
