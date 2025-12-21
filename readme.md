@@ -20,7 +20,7 @@ Pinout for the SPI lines:
 |  19 | MOSI     |
 |  6  | SCK      |
 
-[RP2040 Feather pinout](pinout.png)
+![RP2040 Feather pinout](pinout.png)
 
 ## Compiling
 
