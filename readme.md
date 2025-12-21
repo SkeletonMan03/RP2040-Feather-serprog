@@ -1,10 +1,11 @@
-# pico-serprog
+# RP2040 Feather serprog (fork of pico-serprog for use on RP2040 Feather)
 
 Slightly less terrible serprog implementation for the Raspberry Pi Pico and
 other RP2040 based boards. Based on
 ![pico-serprog by stacksmashing](https://github.com/stacksmashing/pico-serprog/).
 Further improved by kukrimate ![here](https://github.com/kukrimate/pico-serprog).
-And me (Riku\_V) here.
+Further improved by Riku\_V ![here](https://codeberg.org/Riku_V/pico-serprog/).
+Made work on a RP2040 by me (LordSkeletonMan) here.
 
 Pre-compiled binaries can be downloaded from the
 ![Libreboot project](https://libreboot.org/download.html#https).
@@ -18,9 +19,9 @@ Pinout for the SPI lines:
 | Pin | Function |
 |-----|----------|
 |  7  | CS       |
-|  6  | MISO     |
-|  5  | MOSI     |
-|  4  | SCK      |
+|  20 | MISO     |
+|  19 | MOSI     |
+|  6  | SCK      |
 
 ![Pico pinout](pinout.png)
 
@@ -31,7 +32,7 @@ cmake .
 make
 ```
 
-Plug in your Pico. Mount it as you would any other USB flash drive.
+Plug in your RP2040 Feather. Mount it as you would any other USB flash drive.
 Copy `pico_serprog.uf2` into it. Your programmer is now ready.
 If you want to change the firmware, you need to press the button
 on the board while you plug it in.
@@ -71,8 +72,7 @@ As a lot of the code itself was heavily inspired/influenced by `stm32-vserprog`
 this code is licensed under GPLv3.
 
 pinout.png is based on
-[pico-pinout.svg](https://www.raspberrypi.com/documentation/microcontrollers/images/pico-pinout.svg)
-by Raspberry Pi Ltd, under the
-[Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/)
+[Adafruit Feather RP2040 pinout.pdf](https://github.com/adafruit/Adafruit-Feather-RP2040-PCB/blob/main/Adafruit%20Feather%20RP2040%20pinout.pdf)
+by Adafruit Industries, under the
+[Creative Commons Attribution-ShareAlike license](https://creativecommons.org/licenses/by-sa/4.0/)
 license.
-

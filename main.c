@@ -10,7 +10,7 @@
  */
 
 #define DESCRIPTION "SPI flash chip programmer using Flashprog's serprog protocol"
-#define WEBSITE "https://codeberg.org/Riku_V/pico-serprog/"
+#define WEBSITE "https://codeberg.org/LordSkeletonMan/RP2040-Feather-serprog"
 
 #include "pico/stdlib.h"
 #include "pico/binary_info.h"
@@ -18,13 +18,15 @@
 #include "tusb.h"
 #include "serprog.h"
 
+#define PICO_DEFAULT_LED_PIN 13
+
 #define CDC_ITF     0           /* USB CDC interface no */
 
 #define SPI_IF      spi0        /* Which PL022 to use   */
-#define SPI_CS_0    5		/* The default CS pin   */
-#define SPI_MISO    4
-#define SPI_MOSI    3
-#define SPI_SCK     2
+#define SPI_CS_0    7		/* The default CS pin   */
+#define SPI_MISO    20
+#define SPI_MOSI    19
+#define SPI_SCK     6
 
 uint8_t spi_enabled = 0;
 uint cs_pin = SPI_CS_0;
@@ -32,7 +34,7 @@ uint cs_pin = SPI_CS_0;
 
 uint baud = 12000000; /* Default to 12MHz */
 
-static const char progname[16] = "pico-serprog";
+static const char progname[16] = "skel-serprog";
 
 /* Map of supported serprog commands */
 static const uint32_t cmdmap[8] = {
